@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('/media/lss.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Django 템플릿 태그의 결과를 JavaScript 변수에 저장 -->
+    <script>
+        var helloUrl = "{% url 'hello' %}";
+    </script>
+
+</head>
+<body>
+
+<h1>Welcome to My Site</h1>
+
+<!-- 버튼 클릭 시 JavaScript 변수의 값을 location.href에 할당 -->
+<button onclick="location.href=helloUrl" type="button">1</button>
+
+</body>
+</html>
